@@ -2,9 +2,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
-// ❌ ERROR: React is not defined.
-// The config file should only contain Vite config, not component code or lazy import here.
-// Remove: const BigComponent = React.lazy(() => import('./BigComponent'));
 
 export default defineConfig({
   plugins: [react()],
